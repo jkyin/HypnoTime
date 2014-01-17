@@ -29,10 +29,16 @@
                                 <state key="normal" title="What time is it?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showCurrentTime:" destination="hbe-EO-CN6" eventType="touchUpInside" id="7by-Uu-u9U"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="BdW-Hz-0KD" id="Mlh-g0-WgA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amd-qT-MzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
