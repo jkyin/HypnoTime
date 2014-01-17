@@ -7,12 +7,21 @@
 //
 
 #import "HypnoAppDelegate.h"
+#import "HypnosisViewController.h"
 
 @implementation HypnoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // 将新建的 HypnosisViewController 实例赋给 UIWindow 实例的 rootViewController 属性
+    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
+    [[self window] setRootViewController:hvc];
+    
+    
+    
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

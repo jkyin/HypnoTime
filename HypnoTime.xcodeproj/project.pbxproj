@@ -19,6 +19,8 @@
 		2D5452F51889024500485CAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5452DD1889024500485CAE /* UIKit.framework */; };
 		2D5452FD1889024500485CAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D5452FB1889024500485CAE /* InfoPlist.strings */; };
 		2D5452FF1889024500485CAE /* HypnoTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5452FE1889024500485CAE /* HypnoTimeTests.m */; };
+		2D54530A1889027400485CAE /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5453091889027400485CAE /* HypnosisViewController.m */; };
+		2D54530D1889029D00485CAE /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D54530C1889029D00485CAE /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		2D5452FA1889024500485CAE /* HypnoTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoTimeTests-Info.plist"; sourceTree = "<group>"; };
 		2D5452FC1889024500485CAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D5452FE1889024500485CAE /* HypnoTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoTimeTests.m; sourceTree = "<group>"; };
+		2D5453081889027400485CAE /* HypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisViewController.h; sourceTree = "<group>"; };
+		2D5453091889027400485CAE /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisViewController.m; sourceTree = "<group>"; };
+		2D54530B1889029D00485CAE /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		2D54530C1889029D00485CAE /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				2D5452E81889024500485CAE /* HypnoAppDelegate.h */,
 				2D5452E91889024500485CAE /* HypnoAppDelegate.m */,
+				2D5453081889027400485CAE /* HypnosisViewController.h */,
+				2D5453091889027400485CAE /* HypnosisViewController.m */,
+				2D54530B1889029D00485CAE /* HypnosisView.h */,
+				2D54530C1889029D00485CAE /* HypnosisView.m */,
 				2D5452EB1889024500485CAE /* Images.xcassets */,
 				2D5452E01889024500485CAE /* Supporting Files */,
 			);
@@ -240,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D54530A1889027400485CAE /* HypnosisViewController.m in Sources */,
+				2D54530D1889029D00485CAE /* HypnosisView.m in Sources */,
 				2D5452E61889024500485CAE /* main.m in Sources */,
 				2D5452EA1889024500485CAE /* HypnoAppDelegate.m in Sources */,
 			);
