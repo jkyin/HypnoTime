@@ -14,19 +14,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    
-////    // 将新建的 HypnosisViewController 实例赋给 UIWindow 实例的 rootViewController 属性
-//    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
-////    [[self window] setRootViewController:hvc];
-//
-//    TimeViewController *tvc = [[TimeViewController alloc] init];
-//    [[self window] setRootViewController:tvc];
-//    [[self window] addSubview:[tvc timeView]];
-//    
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
+    TimeViewController *tvc = [[TimeViewController alloc] init];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, nil];
+    
+    [tabBarController setViewControllers:viewControllers];
+    [[self window] setRootViewController:tabBarController];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [[self window] makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -10,6 +10,18 @@
 
 @implementation TimeViewController
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        UITabBarItem *tbi = [self tabBarItem];
+        [tbi setTitle:@"Time"];
+        
+        UIImage *i = [UIImage imageNamed:@"Time.png"];
+        [tbi setImage:i];
+    }
+    return self;
+}
 
 - (IBAction)showCurrentTime:(id)sender
 {

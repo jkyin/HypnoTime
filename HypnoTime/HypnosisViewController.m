@@ -11,6 +11,19 @@
 
 @implementation HypnosisViewController
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        UITabBarItem *tbi = [self tabBarItem];
+        [tbi setTitle:@"Hypnosis"];
+        
+        UIImage *i = [UIImage imageNamed:@"Hypno.png"];
+        [tbi setImage:i];
+    }
+    return self;
+}
+
 - (void)loadView
 {
     // 创建 HypnosisView 实例
