@@ -8,6 +8,7 @@
 
 #import "HypnoAppDelegate.h"
 #import "HypnosisViewController.h"
+#import "TimeViewController.h"
 
 @implementation HypnoAppDelegate
 
@@ -15,9 +16,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // 将新建的 HypnosisViewController 实例赋给 UIWindow 实例的 rootViewController 属性
-    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
-    [[self window] setRootViewController:hvc];
+//    // 将新建的 HypnosisViewController 实例赋给 UIWindow 实例的 rootViewController 属性
+//    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
+//    [[self window] setRootViewController:hvc];
+    TimeViewController *tvc = [[TimeViewController alloc] init];
+    [[self window] setRootViewController:tvc];
     
     
     
