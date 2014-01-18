@@ -12,7 +12,9 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nil bundle:nil];
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    self = [super initWithNibName:@"TimeViewController" bundle:appBundle];
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Time"];
@@ -32,6 +34,18 @@
     [formatter setTimeStyle:NSDateFormatterMediumStyle];
     
     [timeLabel setText:[formatter stringFromDate:now]];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [[self view] setBackgroundColor:[UIColor greenColor]];
+    NSLog(@"TimeViewController loaded its view.");
+}
+
+- (void)didReceiveMemoryWarning
+{
+    self.view = nil;
 }
 
 @end

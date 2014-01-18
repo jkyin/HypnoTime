@@ -19,9 +19,9 @@
     
     HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
     TimeViewController *tvc = [[TimeViewController alloc] init];
-    NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, nil];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, nil];
     [tabBarController setViewControllers:viewControllers];
     [[self window] setRootViewController:tabBarController];
     

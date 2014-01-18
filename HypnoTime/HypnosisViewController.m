@@ -11,9 +11,9 @@
 
 @implementation HypnosisViewController
 
-- (id)init
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];
+    self = [super initWithNibName:Nil bundle:nil];
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Hypnosis"];
@@ -33,5 +33,17 @@
     // 将新创建的对象赋给 view 属性
     [self setView:v];
 }
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"HypnosisViewController loaded its view.");
+}
+
+- (void)didReceiveMemoryWarning
+{
+    self.view = nil;
+}
+
 
 @end
