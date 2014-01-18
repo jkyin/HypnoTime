@@ -10,9 +10,9 @@
 
 @implementation TimeViewController
 
-- (id)init
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
         UITabBarItem *tbi = [self tabBarItem];
         [tbi setTitle:@"Time"];

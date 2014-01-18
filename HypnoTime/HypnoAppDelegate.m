@@ -16,11 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    
     HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
     TimeViewController *tvc = [[TimeViewController alloc] init];
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     NSArray *viewControllers = [NSArray arrayWithObjects:hvc, tvc, nil];
     
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:viewControllers];
     [[self window] setRootViewController:tabBarController];
     
